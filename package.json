@@ -18,6 +18,7 @@
     "nodemon": "^1.12.1",
     "path": "^0.12.7",
     "superagent": "^3.8.1",
+    "superagent-throttle": "^0.2.5",
     "supertest": "^3.0.0",
     "ts-loader": "^3.1.1",
     "ts-node": "^3.3.0",

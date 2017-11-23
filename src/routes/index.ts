@@ -2,8 +2,9 @@
 import * as express from 'express'
 
 // internal
-import authorization from './middlewares/authorization'
-import ApiRouter     from './api'
+import authorization   from './middlewares/authorization'
+import cachemiddleware from './middlewares/cache'
+import ApiRouter       from './api'
 
 
 /**
@@ -15,6 +16,7 @@ const Router = express.Router()
 
 // middlewares
 Router.use( '/api', authorization)
+// Router.use( '/api', cachemiddleware)
 
 // routes
 Router.use( '/api', ApiRouter )
